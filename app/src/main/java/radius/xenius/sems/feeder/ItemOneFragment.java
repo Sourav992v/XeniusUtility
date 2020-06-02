@@ -319,7 +319,7 @@ public class ItemOneFragment extends Fragment {
                                     label_short_name.setTextColor(Color.parseColor("#FFFF99"));
                                     label_short_name.setText(short_name);
                                     label_short_name.setBackgroundColor(tablerowcolor);
-                                    label_short_name.setTextSize(12);
+                                    label_short_name.setTextSize(14);
                                     label_short_name.setPadding(12, 12, 30, 12);
                                     tr.addView(label_short_name);
 
@@ -328,7 +328,7 @@ public class ItemOneFragment extends Fragment {
                                     label_installed.setTextColor(white);
                                     label_installed.setBackgroundColor(tablerowcolor);
                                     label_installed.setPadding(50, 12, 0, 12);
-                                    label_installed.setTextSize(12);
+                                    label_installed.setTextSize(14);
                                     tr.addView(label_installed);
 
                                     TextView label_up = new TextView(getContext());
@@ -336,13 +336,13 @@ public class ItemOneFragment extends Fragment {
                                     label_up.setTextColor(white);
                                     label_up.setBackgroundColor(tablerowcolor);
                                     label_up.setPadding(50, 12, 50, 12);
-                                    label_up.setTextSize(12);
+                                    label_up.setTextSize(14);
                                     tr.addView(label_up);
 
                                     TextView label_down = new TextView(getContext());
                                     label_down.setText(down+"");
                                     label_down.setPadding(50, 12, 50, 12);
-                                    label_down.setTextSize(12);
+                                    label_down.setTextSize(14);
                                     label_down.setBackgroundColor(tablerowcolor);
                                     label_down.setTextColor(white);
                                     tr.addView(label_down);
@@ -350,7 +350,7 @@ public class ItemOneFragment extends Fragment {
                                     TextView label_nc = new TextView(getContext());
                                     label_nc.setText(nc+"");
                                     label_nc.setPadding(50, 12, 50, 12);
-                                    label_nc.setTextSize(12);
+                                    label_nc.setTextSize(14);
                                     label_nc.setBackgroundColor(tablerowcolor);
                                     label_nc.setTextColor(white);
                                     tr.addView(label_nc);
@@ -359,7 +359,7 @@ public class ItemOneFragment extends Fragment {
                                     TextView label_np = new TextView(getContext());
                                     label_np.setText(np+"");
                                     label_np.setPadding(50, 12, 50, 12);
-                                    label_np.setTextSize(12);
+                                    label_np.setTextSize(14);
                                     label_np.setBackgroundColor(tablerowcolor);
                                     label_np.setTextColor(white);
                                     tr.addView(label_np);
@@ -367,7 +367,7 @@ public class ItemOneFragment extends Fragment {
                                     TextView label_TOTALl = new TextView(getContext());
                                     label_TOTALl.setText(total+"");
                                     label_TOTALl.setPadding(50, 12, 50, 12);
-                                    label_TOTALl.setTextSize(12);
+                                    label_TOTALl.setTextSize(14);
                                     label_TOTALl.setBackgroundColor(tablerowcolor);
                                     label_TOTALl.setTextColor(white);
                                     tr.addView(label_TOTALl);
@@ -375,7 +375,7 @@ public class ItemOneFragment extends Fragment {
                                     TextView label_mvah = new TextView(getContext());
                                     label_mvah.setText(df2.format(mvah)+"");
                                     label_mvah.setPadding(50, 12, 0, 12);
-                                    label_mvah.setTextSize(12);
+                                    label_mvah.setTextSize(14);
                                     label_mvah.setBackgroundColor(tablerowcolor);
                                     label_mvah.setTextColor(white);
                                     tr.addView(label_mvah);
@@ -383,7 +383,7 @@ public class ItemOneFragment extends Fragment {
                                     TextView label_pf = new TextView(getContext());
                                     label_pf.setText(pf+"");
                                     label_pf.setPadding(50, 12, 0, 12);
-                                    label_pf.setTextSize(12);
+                                    label_pf.setTextSize(14);
                                     label_pf.setBackgroundColor(tablerowcolor);
                                     label_pf.setTextColor(white);
                                     tr.addView(label_pf);
@@ -391,7 +391,7 @@ public class ItemOneFragment extends Fragment {
                                     TextView label_mw = new TextView(getContext());
                                     label_mw.setText(df2.format(mw)+"");
                                     label_mw.setPadding(50, 12, 0, 12);
-                                    label_mw.setTextSize(12);
+                                    label_mw.setTextSize(14);
                                     label_mw.setBackgroundColor(tablerowcolor);
                                     label_mw.setTextColor(white);
                                     tr.addView(label_mw);
@@ -399,7 +399,7 @@ public class ItemOneFragment extends Fragment {
                                     TextView label_mva = new TextView(getContext());
                                     label_mva.setText(df2.format(mva)+"");
                                     label_mva.setPadding(50, 12, 150, 12);
-                                    label_mva.setTextSize(12);
+                                    label_mva.setTextSize(14);
                                     label_mva.setBackgroundColor(tablerowcolor);
                                     label_mva.setTextColor(white);
                                     tr.addView(label_mva);
@@ -458,7 +458,7 @@ public class ItemOneFragment extends Fragment {
                                 label_short_name.setTextColor(Color.parseColor("#FFFF99"));
                                 label_short_name.setText("TOTAL");
                                 label_short_name.setBackgroundColor(tablerowcolor);
-                                label_short_name.setTextSize(12);
+                                label_short_name.setTextSize(14);
                                 label_short_name.setPadding(12, 12, 30, 12);
                                 tr.addView(label_short_name);
 
@@ -467,7 +467,7 @@ public class ItemOneFragment extends Fragment {
                                 label_installed.setTextColor(white);
                                 label_installed.setBackgroundColor(tablerowcolor);
                                 label_installed.setPadding(50, 12, 0, 12);
-                                label_installed.setTextSize(12);
+                                label_installed.setTextSize(14);
                                 tr.addView(label_installed);
 
                                 TextView label_up = new TextView(getContext());
@@ -475,13 +475,13 @@ public class ItemOneFragment extends Fragment {
                                 label_up.setTextColor(white);
                                 label_up.setBackgroundColor(tablerowcolor);
                                 label_up.setPadding(50, 12, 50, 12);
-                                label_up.setTextSize(12);
+                                label_up.setTextSize(14);
                                 tr.addView(label_up);
 
                                 TextView label_down = new TextView(getContext());
                                 label_down.setText(totaldown+"");
                                 label_down.setPadding(50, 12, 50, 12);
-                                label_down.setTextSize(12);
+                                label_down.setTextSize(14);
                                 label_down.setBackgroundColor(tablerowcolor);
                                 label_down.setTextColor(white);
                                 tr.addView(label_down);
@@ -489,7 +489,7 @@ public class ItemOneFragment extends Fragment {
                                 TextView label_nc = new TextView(getContext());
                                 label_nc.setText(totalnc+"");
                                 label_nc.setPadding(50, 12, 50, 12);
-                                label_nc.setTextSize(12);
+                                label_nc.setTextSize(14);
                                 label_nc.setBackgroundColor(tablerowcolor);
                                 label_nc.setTextColor(white);
                                 tr.addView(label_nc);
@@ -497,7 +497,7 @@ public class ItemOneFragment extends Fragment {
                                 TextView label_np = new TextView(getContext());
                                 label_np.setText(totalnp+"");
                                 label_np.setPadding(50, 12, 50, 12);
-                                label_np.setTextSize(12);
+                                label_np.setTextSize(14);
                                 label_np.setBackgroundColor(tablerowcolor);
                                 label_np.setTextColor(white);
                                 tr.addView(label_np);
@@ -505,7 +505,7 @@ public class ItemOneFragment extends Fragment {
                                 TextView label_TOTALl = new TextView(getContext());
                                 label_TOTALl.setText(totaltotal+"");
                                 label_TOTALl.setPadding(50, 12, 50, 12);
-                                label_TOTALl.setTextSize(12);
+                                label_TOTALl.setTextSize(14);
                                 label_TOTALl.setBackgroundColor(tablerowcolor);
                                 label_TOTALl.setTextColor(white);
                                 tr.addView(label_TOTALl);
@@ -513,7 +513,7 @@ public class ItemOneFragment extends Fragment {
                                 TextView label_mvah = new TextView(getContext());
                                 label_mvah.setText(df2.format(totalmvah)+"");
                                 label_mvah.setPadding(50, 12, 0, 12);
-                                label_mvah.setTextSize(12);
+                                label_mvah.setTextSize(14);
                                 label_mvah.setBackgroundColor(tablerowcolor);
                                 label_mvah.setTextColor(white);
                                 tr.addView(label_mvah);
@@ -521,7 +521,7 @@ public class ItemOneFragment extends Fragment {
                                 TextView label_pf = new TextView(getContext());
                                 label_pf.setText(totalpf+"");
                                 label_pf.setPadding(50, 12, 0, 12);
-                                label_pf.setTextSize(12);
+                                label_pf.setTextSize(14);
                                 label_pf.setBackgroundColor(tablerowcolor);
                                 label_pf.setTextColor(white);
                                 tr.addView(label_pf);
@@ -529,7 +529,7 @@ public class ItemOneFragment extends Fragment {
                                 TextView label_mw = new TextView(getContext());
                                 label_mw.setText(df2.format(totalmw)+"");
                                 label_mw.setPadding(50, 12, 0, 12);
-                                label_mw.setTextSize(12);
+                                label_mw.setTextSize(14);
                                 label_mw.setBackgroundColor(tablerowcolor);
                                 label_mw.setTextColor(white);
                                 tr.addView(label_mw);
@@ -537,7 +537,7 @@ public class ItemOneFragment extends Fragment {
                                 TextView label_mva = new TextView(getContext());
                                 label_mva.setText(df2.format(totalmva)+"");
                                 label_mva.setPadding(50, 12, 150, 12);
-                                label_mva.setTextSize(12);
+                                label_mva.setTextSize(14);
                                 label_mva.setBackgroundColor(tablerowcolor);
                                 label_mva.setTextColor(white);
                                 tr.addView(label_mva);
@@ -752,34 +752,34 @@ public class ItemOneFragment extends Fragment {
                                     TextView labelName = new TextView(getContext());
                                     labelName.setText(short_name);
                                     labelName.setPadding(12, 12, 10, 12);
-                                    labelName.setTextSize(12);
+                                    labelName.setTextSize(14);
                                     labelName.setTextColor(Color.parseColor("#FFFF99"));
                                     tr.addView(labelName);
 
                                     TextView labelinterruptionCount = new TextView(getContext());
                                     labelinterruptionCount.setText(total_feeder_interuruption);
                                     labelinterruptionCount.setPadding(50, 12, 0, 12);
-                                    labelinterruptionCount.setTextSize(12);
+                                    labelinterruptionCount.setTextSize(14);
                                     labelinterruptionCount.setTextColor(white);
                                     tr.addView(labelinterruptionCount);
 
                                     TextView labellabelinterruptionDur = new TextView(getContext());
                                     labellabelinterruptionDur.setText(total_feeder_interuruption_duration);
                                     labellabelinterruptionDur.setPadding(50, 12, 0, 12);
-                                    labellabelinterruptionDur.setTextSize(12);
+                                    labellabelinterruptionDur.setTextSize(14);
                                     labellabelinterruptionDur.setTextColor(white);
                                     tr.addView(labellabelinterruptionDur);
 
                                     TextView labeltotal_eul_unit = new TextView(getContext());
                                     labeltotal_eul_unit.setText(total_eul_unit);
-                                    labeltotal_eul_unit.setTextSize(12);
+                                    labeltotal_eul_unit.setTextSize(14);
                                     labeltotal_eul_unit.setPadding(50, 12, 0, 12);
                                     labeltotal_eul_unit.setTextColor(white);
                                     tr.addView(labeltotal_eul_unit);
 
                                     TextView labeltotal_eul_rs = new TextView(getContext());
                                     labeltotal_eul_rs.setText(total_eul_amount);
-                                    labeltotal_eul_rs.setTextSize(12);
+                                    labeltotal_eul_rs.setTextSize(14);
                                     labeltotal_eul_rs.setPadding(50, 12, 0, 12);
                                     labeltotal_eul_rs.setTextColor(white);
                                     tr.addView(labeltotal_eul_rs);
@@ -793,35 +793,35 @@ public class ItemOneFragment extends Fragment {
 
                                     TextView labelEULAMT11 = new TextView(getContext());
                                     labelEULAMT11.setText(EUL1_AMOUNT);
-                                    labelEULAMT11.setTextSize(12);
+                                    labelEULAMT11.setTextSize(14);
                                     labelEULAMT11.setPadding(50, 12, 0, 12);
                                     labelEULAMT11.setTextColor(white);
                                     tr.addView(labelEULAMT11);
 
                                     TextView labelEUL12 = new TextView(getContext());
                                     labelEUL12.setText(EUL2);
-                                    labelEUL12.setTextSize(12);
+                                    labelEUL12.setTextSize(14);
                                     labelEUL12.setPadding(50, 12, 0, 12);
                                     labelEUL12.setTextColor(white);
                                     tr.addView(labelEUL12);
 
                                     TextView labelEUL112 = new TextView(getContext());
                                     labelEUL112.setText(EUL2_AMOUNT);
-                                    labelEUL112.setTextSize(12);
+                                    labelEUL112.setTextSize(14);
                                     labelEUL112.setPadding(50, 12, 0, 12);
                                     labelEUL112.setTextColor(white);
                                     tr.addView(labelEUL112);
 
                                     TextView labelEUL13 = new TextView(getContext());
                                     labelEUL13.setText(EUL3);
-                                    labelEUL13.setTextSize(12);
+                                    labelEUL13.setTextSize(14);
                                     labelEUL13.setPadding(50, 12, 0, 12);
                                     labelEUL13.setTextColor(white);
                                     tr.addView(labelEUL13);
 
                                     TextView labelEUL113 = new TextView(getContext());
                                     labelEUL113.setText(EUL3_AMOUNT);
-                                    labelEUL113.setTextSize(12);
+                                    labelEUL113.setTextSize(14);
                                     labelEUL113.setPadding(50, 12, 100, 12);
                                     labelEUL113.setTextColor(white);
                                     tr.addView(labelEUL113);
@@ -842,14 +842,14 @@ public class ItemOneFragment extends Fragment {
                                 TextView label_totall = new TextView(getActivity());
                                 label_totall.setText("TOTAL   ");
                                 label_totall.setPadding(12, 12, 10, 12);
-                                label_totall.setTextSize(12);
+                                label_totall.setTextSize(14);
                                 label_totall.setTextColor(Color.parseColor("#FFFF99"));
                                 tr_total.addView(label_totall);
 
                                 TextView label_totalInterupt = new TextView(getActivity());
                                 label_totalInterupt.setText(total.getString("totalInterupt"));
                                 label_totalInterupt.setPadding(50, 12, 0, 12);
-                                label_totalInterupt.setTextSize(12);
+                                label_totalInterupt.setTextSize(14);
                                 label_totalInterupt.setTextColor(white);
                                 tr_total.addView(label_totalInterupt);
 
@@ -857,14 +857,14 @@ public class ItemOneFragment extends Fragment {
                                 label_total3.setText(total.getString("totalInteruptDuration"));
                                 label_total3.setTextColor(white);
                                 label_total3.setPadding(50, 12, 0, 12);
-                                label_total3.setTextSize(12);
+                                label_total3.setTextSize(14);
                                 tr_total.addView(label_total3);
 
                                 TextView label_toaleul = new TextView(getActivity());
                                 label_toaleul.setText(total.getString("toaleul"));
                                 label_toaleul.setTextColor(white);
                                 label_toaleul.setPadding(50, 12, 0, 12);
-                                label_toaleul.setTextSize(12);
+                                label_toaleul.setTextSize(14);
                                 tr_total.addView(label_toaleul);
 
 
@@ -872,49 +872,49 @@ public class ItemOneFragment extends Fragment {
                                 label_toaleul_amount.setText(total.getString("toaleul_amount"));
                                 label_toaleul_amount.setTextColor(white);
                                 label_toaleul_amount.setPadding(50, 12, 0, 12);
-                                label_toaleul_amount.setTextSize(12);
+                                label_toaleul_amount.setTextSize(14);
                                 tr_total.addView(label_toaleul_amount);
 
                                 TextView label_EUL1 = new TextView(getActivity());
                                 label_EUL1.setText(total.getString("EUL1"));
                                 label_EUL1.setTextColor(white);
                                 label_EUL1.setPadding(50, 12, 0, 12);
-                                label_EUL1.setTextSize(12);
+                                label_EUL1.setTextSize(14);
                                 tr_total.addView(label_EUL1);
 
                                 TextView label_EUL1_AMOUNT = new TextView(getActivity());
                                 label_EUL1_AMOUNT.setText(total.getString("EUL1_AMOUNT"));
                                 label_EUL1_AMOUNT.setTextColor(white);
                                 label_EUL1_AMOUNT.setPadding(50, 12, 0, 12);
-                                label_EUL1_AMOUNT.setTextSize(12);
+                                label_EUL1_AMOUNT.setTextSize(14);
                                 tr_total.addView(label_EUL1_AMOUNT);
 
                                 TextView label_EUL2 = new TextView(getActivity());
                                 label_EUL2.setText(total.getString("EUL2"));
                                 label_EUL2.setTextColor(white);
                                 label_EUL2.setPadding(50, 12, 0, 12);
-                                label_EUL2.setTextSize(12);
+                                label_EUL2.setTextSize(14);
                                 tr_total.addView(label_EUL2);
 
                                 TextView label_EUL2_AMOUNT = new TextView(getActivity());
                                 label_EUL2_AMOUNT.setText(total.getString("EUL2_AMOUNT"));
                                 label_EUL2_AMOUNT.setTextColor(white);
                                 label_EUL2_AMOUNT.setPadding(50, 12, 0, 12);
-                                label_EUL2_AMOUNT.setTextSize(12);
+                                label_EUL2_AMOUNT.setTextSize(14);
                                 tr_total.addView(label_EUL2_AMOUNT);
 
                                 TextView label_EUL3 = new TextView(getActivity());
                                 label_EUL3.setText(total.getString("EUL3"));
                                 label_EUL3.setTextColor(white);
                                 label_EUL3.setPadding(50, 12, 0, 12);
-                                label_EUL3.setTextSize(12);
+                                label_EUL3.setTextSize(14);
                                 tr_total.addView(label_EUL3);
 
                                 TextView label_EUL3_AMOUNT = new TextView(getActivity());
                                 label_EUL3_AMOUNT.setText(total.getString("EUL3_AMOUNT"));
                                 label_EUL3_AMOUNT.setTextColor(white);
                                 label_EUL3_AMOUNT.setPadding(50, 12, 100, 12);
-                                label_EUL3_AMOUNT.setTextSize(12);
+                                label_EUL3_AMOUNT.setTextSize(14);
                                 tr_total.addView(label_EUL3_AMOUNT);
 
 
@@ -1122,76 +1122,76 @@ public class ItemOneFragment extends Fragment {
                                     TextView labelName = new TextView(getContext());
                                     labelName.setText(short_name);
                                     labelName.setPadding(12, 12, 10, 12);
-                                    labelName.setTextSize(12);
+                                    labelName.setTextSize(14);
                                     labelName.setTextColor(Color.parseColor("#FFFF99"));
                                     tr.addView(labelName);
 
                                     TextView labelinterruptionCount = new TextView(getContext());
                                     labelinterruptionCount.setText(total_feeder_interuruption);
                                     labelinterruptionCount.setPadding(50, 12, 0, 12);
-                                    labelinterruptionCount.setTextSize(12);
+                                    labelinterruptionCount.setTextSize(14);
                                     labelinterruptionCount.setTextColor(white);
                                     tr.addView(labelinterruptionCount);
 
                                     TextView labellabelinterruptionDur = new TextView(getContext());
                                     labellabelinterruptionDur.setText(total_feeder_interuruption_duration);
                                     labellabelinterruptionDur.setPadding(50, 12, 0, 12);
-                                    labellabelinterruptionDur.setTextSize(12);
+                                    labellabelinterruptionDur.setTextSize(14);
                                     labellabelinterruptionDur.setTextColor(white);
                                     tr.addView(labellabelinterruptionDur);
 
                                     TextView labeltotal_eul_unit = new TextView(getContext());
                                     labeltotal_eul_unit.setText(total_eul_unit);
-                                    labeltotal_eul_unit.setTextSize(12);
+                                    labeltotal_eul_unit.setTextSize(14);
                                     labeltotal_eul_unit.setPadding(50, 12, 0, 12);
                                     labeltotal_eul_unit.setTextColor(white);
                                     tr.addView(labeltotal_eul_unit);
 
                                     TextView labeltotal_eul_rs = new TextView(getContext());
                                     labeltotal_eul_rs.setText(total_eul_amount);
-                                    labeltotal_eul_rs.setTextSize(12);
+                                    labeltotal_eul_rs.setTextSize(14);
                                     labeltotal_eul_rs.setPadding(50, 12, 0, 12);
                                     labeltotal_eul_rs.setTextColor(white);
                                     tr.addView(labeltotal_eul_rs);
 
                                     TextView labelEUL11 = new TextView(getContext());
                                     labelEUL11.setText(EUL1);
-                                    labelEUL11.setTextSize(12);
+                                    labelEUL11.setTextSize(14);
                                     labelEUL11.setPadding(50, 12, 0, 12);
                                     labelEUL11.setTextColor(white);
                                     tr.addView(labelEUL11);
 
                                     TextView labelEULAMT11 = new TextView(getContext());
                                     labelEULAMT11.setText(EUL1_AMOUNT);
-                                    labelEULAMT11.setTextSize(12);
+                                    labelEULAMT11.setTextSize(14);
                                     labelEULAMT11.setPadding(50, 12, 0, 12);
                                     labelEULAMT11.setTextColor(white);
                                     tr.addView(labelEULAMT11);
 
                                     TextView labelEUL12 = new TextView(getContext());
                                     labelEUL12.setText(EUL2);
-                                    labelEUL12.setTextSize(12);
+                                    labelEUL12.setTextSize(14);
                                     labelEUL12.setPadding(50, 12, 0, 12);
                                     labelEUL12.setTextColor(white);
                                     tr.addView(labelEUL12);
 
                                     TextView labelEUL112 = new TextView(getContext());
                                     labelEUL112.setText(EUL2_AMOUNT);
-                                    labelEUL112.setTextSize(12);
+                                    labelEUL112.setTextSize(14);
                                     labelEUL112.setPadding(50, 12, 0, 12);
                                     labelEUL112.setTextColor(white);
                                     tr.addView(labelEUL112);
 
                                     TextView labelEUL13 = new TextView(getContext());
                                     labelEUL13.setText(EUL3);
-                                    labelEUL13.setTextSize(12);
+                                    labelEUL13.setTextSize(14);
                                     labelEUL13.setPadding(50, 12, 0, 12);
                                     labelEUL13.setTextColor(white);
                                     tr.addView(labelEUL13);
 
                                     TextView labelEUL113 = new TextView(getContext());
                                     labelEUL113.setText(EUL3_AMOUNT);
-                                    labelEUL113.setTextSize(12);
+                                    labelEUL113.setTextSize(14);
                                     labelEUL113.setPadding(50, 12, 100, 12);
                                     labelEUL113.setTextColor(white);
                                     tr.addView(labelEUL113);
@@ -1213,14 +1213,14 @@ public class ItemOneFragment extends Fragment {
                                 TextView label_total41 = new TextView(getActivity());
                                 label_total41.setText("TOTAL   ");
                                 label_total41.setPadding(8, 12, 50, 12);
-                                label_total41.setTextSize(12);
+                                label_total41.setTextSize(14);
                                 label_total41.setTextColor(Color.parseColor("#FFFF99"));
                                 tr_total.addView(label_total41);
 
                                 TextView label_total2 = new TextView(getActivity());
                                 label_total2.setText(total.getString("totalInterupt"));
                                 label_total2.setPadding(50, 12, 0, 12);
-                                label_total2.setTextSize(12);
+                                label_total2.setTextSize(14);
                                 label_total2.setTextColor(white);
                                 tr_total.addView(label_total2);
 
@@ -1228,62 +1228,62 @@ public class ItemOneFragment extends Fragment {
                                 label_total3.setText(total.getString("totalInteruptDuration"));
                                 label_total3.setTextColor(white);
                                 label_total3.setPadding(50, 12, 0, 12);
-                                label_total3.setTextSize(12);
+                                label_total3.setTextSize(14);
                                 tr_total.addView(label_total3);
 
                                 TextView label_total4 = new TextView(getActivity());
                                 label_total4.setText(total.getString("toaleul"));
                                 label_total4.setTextColor(white);
                                 label_total4.setPadding(50, 12, 0, 12);
-                                label_total4.setTextSize(12);
+                                label_total4.setTextSize(14);
 
                                 TextView label_toaleul_amount = new TextView(getActivity());
                                 label_toaleul_amount.setText(total.getString("toaleul_amount"));
                                 label_toaleul_amount.setTextColor(white);
                                 label_toaleul_amount.setPadding(50, 12, 0, 12);
-                                label_toaleul_amount.setTextSize(12);
+                                label_toaleul_amount.setTextSize(14);
                                 tr_total.addView(label_toaleul_amount);
 
                                 TextView label_EUL1 = new TextView(getActivity());
                                 label_EUL1.setText(total.getString("EUL1"));
                                 label_EUL1.setTextColor(white);
                                 label_EUL1.setPadding(50, 12, 0, 12);
-                                label_EUL1.setTextSize(12);
+                                label_EUL1.setTextSize(14);
                                 tr_total.addView(label_EUL1);
 
                                 TextView label_EUL1_AMOUNT = new TextView(getActivity());
                                 label_EUL1_AMOUNT.setText(total.getString("EUL1_AMOUNT"));
                                 label_EUL1_AMOUNT.setTextColor(white);
                                 label_EUL1_AMOUNT.setPadding(50, 12, 0, 12);
-                                label_EUL1_AMOUNT.setTextSize(12);
+                                label_EUL1_AMOUNT.setTextSize(14);
                                 tr_total.addView(label_EUL1_AMOUNT);
 
                                 TextView label_EUL2 = new TextView(getActivity());
                                 label_EUL2.setText(total.getString("EUL2"));
                                 label_EUL2.setTextColor(white);
                                 label_EUL2.setPadding(50, 12, 0, 12);
-                                label_EUL2.setTextSize(12);
+                                label_EUL2.setTextSize(14);
                                 tr_total.addView(label_EUL2);
 
                                 TextView label_EUL2_AMOUNT = new TextView(getActivity());
                                 label_EUL2_AMOUNT.setText(total.getString("EUL2_AMOUNT"));
                                 label_EUL2_AMOUNT.setTextColor(white);
                                 label_EUL2_AMOUNT.setPadding(50, 12, 0, 12);
-                                label_EUL2_AMOUNT.setTextSize(12);
+                                label_EUL2_AMOUNT.setTextSize(14);
                                 tr_total.addView(label_EUL2_AMOUNT);
 
                                 TextView label_EUL3 = new TextView(getActivity());
                                 label_EUL3.setText(total.getString("EUL3"));
                                 label_EUL3.setTextColor(white);
                                 label_EUL3.setPadding(50, 12, 0, 12);
-                                label_EUL3.setTextSize(12);
+                                label_EUL3.setTextSize(14);
                                 tr_total.addView(label_EUL3);
 
                                 TextView label_EUL3_AMOUNT = new TextView(getActivity());
                                 label_EUL3_AMOUNT.setText(total.getString("EUL3_AMOUNT"));
                                 label_EUL3_AMOUNT.setTextColor(white);
                                 label_EUL3_AMOUNT.setPadding(50, 12, 100, 12);
-                                label_EUL3_AMOUNT.setTextSize(12);
+                                label_EUL3_AMOUNT.setTextSize(14);
                                 tr_total.addView(label_EUL3_AMOUNT);
 
                                 tr_total.addView(label_total4);

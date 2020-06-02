@@ -1,0 +1,465 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005a5a"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="720dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center"
+    android:background="#005a5a"
+    android:layout_marginTop=".1mm"
+    android:padding="0dp"
+    android:gravity="fill_vertical"
+    tools:context="radius.xenius.sems.feeder.ItemThreeFragment">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#004040"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout1"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal"
+            android:text="Avg Outage Details "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#5DADE2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.e.xeniusapp.FeederAddSmartGateway"
+        android:background="#005a5a"
+        android:layout_below="@+id/RelativeLayout03"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:id="@+id/avg_outageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="1300dp"
+            android:gravity="left"
+            android:layout_marginTop="0dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discomText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Discom"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_discom"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12dp"
+                android:background="@drawable/background"
+                android:layout_below="@+id/discomText"
+                android:layout_centerHorizontal="true">
+
+                <Spinner
+                    android:id="@+id/spnr_discom"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <requestFocus />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/zoneText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Zone"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/relative_spnr_discom"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_zone"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/background"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/zoneText"
+                android:textSize="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spnr_zone"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/circleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Circle"
+                android:textColor="@color/white"
+                android:layout_marginTop="12dp"
+                android:textSize="12dp"
+                android:layout_below="@+id/relative_spnr_zone"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_circle"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="12dp"
+                android:background="@drawable/background"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/circleText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spnr_circle"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/divisionText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Division"
+                android:textSize="12dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/relative_spnr_circle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_division"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/background"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/divisionText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spnr_division"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sustationText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Substation"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_below="@+id/relative_spnr_division"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_substation"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/background"
+                android:layout_marginTop="3dp"
+                android:textSize="12dp"
+                android:layout_below="@+id/sustationText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spnr_substation"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/feederText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Feeders"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_below="@+id/relative_spnr_substation"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_feeder"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/background"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/feederText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spnr_feeder"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/outagetypeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Outage Type"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_below="@+id/relative_spnr_substation"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_outage_type"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/background"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/feederText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spnr_outage_type"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout40"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:orientation="vertical"
+                android:gravity="top"
+                android:textSize="12dp"
+                android:paddingLeft="7dp"
+                android:layout_marginTop="12dp"
+                android:background="#005a5a"
+                android:layout_below="@+id/RelativeLayout04"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageButton
+                    android:id="@+id/datebtn"
+                    android:layout_width="25dp"
+                    android:layout_height="35dp"
+                    android:layout_above="@+id/todateText"
+                    android:layout_alignTop="@+id/fromdateText"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/fromdateText"
+                    android:layout_toRightOf="@+id/fromdateText"
+                    android:background="@drawable/calendar"
+                    android:contentDescription="pick Date"
+                    android:cropToPadding="true" />
+
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center|left"
+                    android:text="To Date  "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@+id/todateText" />
+
+                <EditText
+                    android:id="@+id/todateText"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:editable="false"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/background"
+                    android:ems="10"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/fromdateText"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textView21"
+                    android:layout_toLeftOf="@+id/datebtn"
+                    android:layout_toStartOf="@+id/datebtn">
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/toDate"
+                    android:layout_width="25dp"
+                    android:layout_height="35dp"
+                    android:layout_alignBottom="@+id/todateText"
+                    android:layout_alignEnd="@+id/datebtn"
+                    android:layout_alignRight="@+id/datebtn"
+                    android:layout_alignTop="@+id/todateText"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toRightOf="@+id/todateText"
+                    android:background="@drawable/calendar"
+                    android:contentDescription="pick Date"
+                    android:cropToPadding="true" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:textSize="12dp"
+                    android:gravity="center|left"
+                    android:text="From Date  "
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    android:layout_marginTop="12dp" />
+
+                <EditText
+                    android:id="@+id/fromdateText"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:editable="false"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/background"
+                    android:ems="10"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@+id/textView2"
+                    android:layout_centerHorizontal="true">
+                </EditText>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:longClickable="false"
+                android:text="View"
+                android:textSize="17dp"
+                android:textColor="@color/yello"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/fragment_background"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+</LinearLayout>

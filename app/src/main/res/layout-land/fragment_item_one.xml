@@ -1,0 +1,485 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005a5a"
+    android:layout_marginTop=".1mm"
+    tools:context="radius.xenius.sems.feeder.ItemOneFragment">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|fill_vertical"
+        android:background="#005a5a"
+        android:gravity="fill_vertical"
+        android:paddingBottom="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Overview"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#5DADE2"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/consumerNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RelativeLayout12"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="Welcome,"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:background="#004040"
+            android:layout_below="@+id/textView01"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/project_idTxt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RelativeLayout12"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="Project :"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout112"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:background="#004040"
+            android:layout_below="@+id/project_idTxt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#005a5a"
+            android:layout_gravity="center"
+            android:layout_below="@+id/RelativeLayout112"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout011"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top|fill_vertical"
+                android:layout_marginTop="0dp"
+                android:background="#005a5a"
+                android:gravity="fill_vertical"
+                android:paddingBottom="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:background="#004040"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="FEEDER STATUS"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/yello"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout04"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/RelativeLayout02"
+                    android:layout_alignParentLeft="true"
+                    android:background="#004040"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="TODAY'S VITAL STATISTICS"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/yello"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout40"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/RelativeLayout04"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center|left"
+                        android:text="Date : "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/lightyello"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/datebtn"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/dateText"
+                        android:contentDescription="pick Date"
+                        android:cropToPadding="true"
+                        android:background="@drawable/calendar"
+                        android:layout_alignBottom="@+id/dateText"
+                        android:layout_alignTop="@+id/textView2" />
+
+                    <EditText
+                        android:id="@+id/dateText"
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"
+                        android:editable="false"
+                        android:paddingLeft="5dp"
+                        android:background="@drawable/background"
+                        android:ems="10"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView2"
+                        android:layout_toEndOf="@+id/textView2">
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:text="More >"
+                        android:textColor="@color/lightyello"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="top"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/RelativeLayout40"
+                    android:background="@drawable/background">
+                    <ScrollView
+                        android:id="@+id/layout"
+                        android:layout_height="match_parent"
+                        android:background="#005a5a"
+                        android:scrollbars="horizontal|vertical"
+                        android:layout_width="match_parent"
+                        android:scrollbarStyle="outsideInset"
+                        android:layout_marginTop="0dp"
+                        android:fillViewport="true">
+                        <HorizontalScrollView
+                            android:layout_marginTop="0dp"
+                            android:id="@+id/horizontalView"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="horizontal|vertical"
+                            android:layout_width="match_parent">
+
+                            <TableLayout
+                                android:layout_marginTop="0dp"
+                                android:id="@+id/today"
+                                android:stretchColumns="*"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content">
+                            </TableLayout>
+                        </HorizontalScrollView>
+                    </ScrollView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout06"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/RelativeLayout05"
+                    android:layout_alignParentLeft="true"
+                    android:background="#004040"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="MONTHLY VITAL STATISTICS"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/yello"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout41"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/RelativeLayout06"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center|left"
+                        android:text="Month-Year : "
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16sp"
+                        android:textColor="@color/lightyello"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/month_yearText"
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:editable="false"
+                        android:paddingLeft="5dp"
+                        android:background="@drawable/background"
+                        android:ems="10"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:layout_toEndOf="@+id/textView3">
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/month_yearbtn"
+                        android:layout_width="25dp"
+                        android:layout_height="35dp"
+                        android:contentDescription="pick Date"
+                        android:cropToPadding="true"
+                        android:background="@drawable/calendar"
+                        android:layout_alignBottom="@+id/month_yearText"
+                        android:layout_toRightOf="@+id/month_yearText"
+                        android:layout_toEndOf="@+id/month_yearText"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_alignParentTop="true" />
+
+                    <TextView
+                        android:id="@+id/more2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center|start"
+                        android:text="More >"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/lightyello"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/RelativeLayout41"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/background">
+
+                    <ScrollView
+                        android:id="@+id/layou3t"
+                        android:layout_height="match_parent"
+                        android:scrollbars="horizontal|vertical"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:background="#005a5a"
+                        android:scrollbarStyle="outsideInset"
+                        android:fillViewport="true">
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="horizontal|vertical"
+                            android:layout_marginTop="0dp">
+
+                            <TableLayout
+                                android:id="@+id/monthly"
+                                android:stretchColumns="*"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content">
+                            </TableLayout>
+                        </HorizontalScrollView>
+                    </ScrollView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/more3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/RelativeLayout03"
+                    android:gravity="center|start"
+                    android:text="More >"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/lightyello"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true" />
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="top"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/more3"
+                    android:background="@drawable/background">
+                    <ScrollView
+                        android:id="@+id/layout1"
+                        android:layout_height="match_parent"
+                        android:background="#005a5a"
+                        android:scrollbars="horizontal|vertical"
+                        android:layout_width="match_parent"
+                        android:scrollbarStyle="outsideInset"
+                        android:layout_marginTop="0dp"
+                        android:fillViewport="true">
+                        <HorizontalScrollView
+                            android:layout_marginTop="0dp"
+                            android:id="@+id/horizontalView1"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="horizontal|vertical"
+                            android:layout_width="match_parent">
+
+                            <TableLayout
+                                android:id="@+id/feeder_status"
+                                android:stretchColumns="*"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content">
+                            </TableLayout>
+                        </HorizontalScrollView>
+                    </ScrollView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
