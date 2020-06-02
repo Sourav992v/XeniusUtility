@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|fill_vertical"
+    android:layout_marginTop="20dp"
+    android:background="#FFF"
+    android:padding="0dp"
+    android:gravity="fill_vertical"
+    tools:context="radius.xenius.sems.feeder.ItemFourFragment">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_below="@+id/daily"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2"
+            android:shrinkColumns="2"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="match_parent" >
+                <TextView
+                    android:id="@+id/lasttxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/feeder1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="Event Date"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/lightblue"
+                    android:gravity="left|center"
+                    android:textSize="12dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/event_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="1"
+                    android:background="#FF909090"
+                    android:padding="2dip" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp" >
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/feeder2"
+                    android:layout_width="0dp"
+                    android:gravity="left|center"
+                    android:layout_height="30dp"
+                    android:text="Feeder Count"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/lightblue"
+                    android:textSize="12dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/feeder_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="1"
+                    android:background="#FF909090"
+                    android:padding="2dip" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/feedername"
+                    android:layout_width="0dp"
+                    android:gravity="left|center"
+                    android:layout_height="30dp"
+                    android:text="Outage Count"
+                    android:padding="2dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/lightblue"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/outage_count"
+                    android:layout_width="0dp"
+                    android:gravity="left|center"
+                    android:layout_height="30dp"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:id="@+id/line17"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dp"
+                    android:background="#FF909090"
+                    android:padding="2dip" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp" >
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/feeder51"
+                    android:paddingLeft="2dp"
+                    android:layout_width="0dp"
+                    android:gravity="left|center"
+                    android:layout_height="30dp"
+                    android:text="Total Outage Duration"
+                    android:textSize="12dp"
+                    android:textColor="@color/lightblue"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/outage_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:id="@+id/line23"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="1"
+                    android:background="#FF909090"
+                    android:padding="2dip" />
+            </TableRow>
+
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

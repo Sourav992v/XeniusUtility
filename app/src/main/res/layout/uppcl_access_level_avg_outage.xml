@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|fill_vertical"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/background"
+    android:padding="1dp"
+    android:gravity="fill_vertical"
+    tools:context="radius.xenius.sems.feeder.ItemThreeFragment">>
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:background="#005c5c"
+        android:layout_below="@+id/daily"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="2"
+                    android:shrinkColumns="2"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TableRow
+                        android:id="@+id/tableRow11"
+                        android:layout_width="match_parent" >
+                        <TextView
+                            android:id="@+id/lasttxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"/>
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow0"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="3dp">
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/feedername"
+                            android:layout_width="0dp"
+                            android:gravity="left|center"
+                            android:layout_height="30dp"
+                            android:textColor="@color/lightblue"
+                            android:text="Outage Count"
+                            android:textSize="12dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/outage_count"
+                            android:layout_width="0dp"
+                            android:gravity="left|center"
+                            android:layout_height="30dp"
+                            android:text="0"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:id="@+id/line17"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dip"
+                            android:layout_weight="1"
+                            android:paddingLeft="2dp"
+                            android:background="#FF909090"
+                            android:padding="2dip" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow9"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="3dp" >
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/feeder51"
+                            android:paddingLeft="2dp"
+                            android:layout_width="0dp"
+                            android:gravity="left|center"
+                            android:textColor="@color/lightblue"
+                            android:layout_height="30dp"
+                            android:text="Outage Duration"
+                            android:textSize="12dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/outage_duration"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="00:00:00"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:id="@+id/line23"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dip"
+                            android:layout_weight="1"
+                            android:background="#FF909090"
+                            android:padding="2dip" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="3dp">
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/feeder1"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:text="Rounded Avg Outage Count"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/lightblue"
+                            android:gravity="left|center"
+                            android:textSize="12dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/rounded_avg_outage_count"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:gravity="left"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                     </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:id="@+id/line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dip"
+                            android:layout_weight="1"
+                            android:background="#FF909090"
+                            android:padding="2dip" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="3dp" >
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/feeder2"
+                            android:layout_width="0dp"
+                            android:gravity="left|center"
+                            android:layout_height="30dp"
+                            android:textColor="@color/lightblue"
+
+                            android:text="Actual Avg Outage Count"
+                            android:paddingLeft="2dp"
+                            android:textSize="12dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/actual_avg_outage_count"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:id="@+id/line4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dip"
+                            android:layout_weight="1"
+                            android:background="#FF909090"
+                            android:padding="2dip" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="3dp" >
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/feeder3"
+                            android:layout_width="0dp"
+                            android:paddingLeft="2dp"
+                            android:gravity="left|center"
+                            android:layout_height="30dp"
+                            android:textColor="@color/lightblue"
+                            android:text="Avg Outage Duration"
+                            android:textSize="12dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/avg_outage_duration"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:id="@+id/line5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dip"
+                            android:layout_weight="1"
+                            android:paddingLeft="2dp"
+                            android:background="#FF909090"
+                            android:padding="2dip" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="3dp" >
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/feeder4"
+                            android:layout_width="0dp"
+                            android:paddingLeft="2dp"
+                            android:gravity="left|center"
+                            android:layout_height="30dp"
+                            android:textColor="@color/lightblue"
+                            android:text="Avg Outage Duration Per Day"
+                            android:textSize="12dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:id="@+id/avg_outage_duration_per_day"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                     </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:id="@+id/line6"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dip"
+                            android:layout_weight="1"
+                            android:paddingLeft="2dp"
+                            android:background="#FF909090"
+                            android:padding="2dip" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="25dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="3dp" >
+                        <TextView
+                            android:layout_weight="6"
+                            android:id="@+id/feeder50"
+                            android:paddingLeft="2dp"
+                            android:layout_width="0dp"
+                            android:gravity="left|center"
+                            android:layout_height="30dp"
+                            android:text=""
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textsize"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_weight="6"
+                            android:id="@+id/jfdkjd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/textsize"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_weight="6"
+                            android:id="@+id/morethan304"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:paddingLeft="2dp"
+                            android:gravity="left"
+                            android:textSize="@dimen/textsize"
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                    </TableRow>
+                </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

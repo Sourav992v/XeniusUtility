@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|fill_vertical"
+    android:background="#005a5a"
+    android:layout_marginTop=".1mm"
+    android:padding="0dp"
+    android:gravity="fill_vertical"
+    tools:context=".NPFeedersDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout2"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal"
+            android:text="NP Feeders"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#5DADE2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#004040"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.e.xeniusapp.FeederAddSmartGateway"
+        android:background="#005a5a"
+        android:layout_below="@+id/RelativeLayout13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/avg_outageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="1300dp"
+            android:gravity="left"
+            android:layout_marginTop="0dp"
+            android:padding="0dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/RelativeLayout05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="top"
+                android:layout_marginTop="0dp"
+                android:layout_below="@+id/RelativeLayout40"
+                android:background="@drawable/background">
+                <ScrollView
+                    android:id="@+id/layout"
+                    android:layout_height="match_parent"
+                    android:background="#005a5a"
+                    android:scrollbars="horizontal|vertical"
+                    android:layout_width="match_parent"
+                    android:scrollbarStyle="outsideInset"
+                    android:layout_marginTop="0dp"
+                    android:fillViewport="true">
+                    <HorizontalScrollView
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/horizontalView"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="horizontal|vertical"
+                        android:layout_width="420dp">
+
+                        <TableLayout
+                            android:layout_marginTop="0dp"
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/remarkLayout"
+                            android:layout_weight="6"
+                            android:stretchColumns="*"
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent">
+                        </TableLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

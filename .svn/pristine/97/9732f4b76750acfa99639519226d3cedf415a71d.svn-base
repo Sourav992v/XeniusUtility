@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/overviewje"
+        android:icon="@drawable/home"
+        android:title="@string/item_1"/>
+    <item
+        android:id="@+id/outageje"
+        android:icon="@drawable/details"
+        android:title="@string/outage"/>
+    <item
+        android:id="@+id/avgOutage"
+        android:icon="@drawable/pp"
+        android:title="@string/avg_outage"/>
+
+</menu>

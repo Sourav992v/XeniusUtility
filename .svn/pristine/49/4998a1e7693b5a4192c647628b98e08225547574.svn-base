@@ -1,0 +1,283 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|fill_vertical"
+        android:layout_marginTop="5dp"
+        android:background="#FFF"
+        android:padding="0dp"
+        android:gravity="fill_vertical"
+        tools:context="radius.xenius.sems.feeder.ItemTwoFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_button"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/activity_dldetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.e.xeniusapp.FeederAddSmartGateway"
+        android:background="@drawable/background"
+        android:layout_below="@+id/RelativeLayout03"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/feeder_detailsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="1220dp"
+            android:gravity="left"
+            android:layout_marginTop="0dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discomText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Discom"
+                android:textSize="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_discom"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/card_background_selector"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/discomText"
+                android:layout_centerHorizontal="true">
+
+                <Spinner
+                    android:id="@+id/spnr_discom"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <requestFocus />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/zoneText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Zone"
+                android:textSize="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/relative_spnr_discom"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_zone"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/card_background_selector"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/zoneText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <Spinner
+                    android:id="@+id/spnr_zone"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/circleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Circle"
+                android:textSize="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/relative_spnr_zone"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_circle"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/card_background_selector"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/circleText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spnr_circle"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/divisionText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Division"
+                android:textSize="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/relative_spnr_circle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_division"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/card_background_selector"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/divisionText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spnr_division"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sustationText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Substation"
+                android:textSize="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/relative_spnr_division"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spnr_substation"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/card_background_selector"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/sustationText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spnr_substation"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/feederText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Feeders"
+                android:textSize="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/relative_spnr_substation"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <RelativeLayout
+                android:id="@+id/relative_spnr_feeder"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/card_background_selector"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/feederText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spnr_feeder"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout1"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Feeder Details "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#800000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,279 @@
+package radius.xenius.sems.feeder;
+
+import android.app.ProgressDialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.AsyncTask;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+import org.json.JSONArray;
+
+import org.json.JSONObject;
+
+public class ViewRemarkActivity extends AppCompatActivity {
+    ProgressDialog pd;
+    String resultData;
+    int tablerowcolor = Color.parseColor("#005c5c");
+    int white = Color.parseColor("#ffffff");
+    String substation_name="";
+    String feeder_name="";
+    String feeder_id;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_view_remark);
+        Bundle gt=getIntent().getExtras();
+        substation_name=gt.getString("substation_name");
+        feeder_name=gt.getString("feeder_name");
+        feeder_id=gt.getString("feeder_id");
+        getSupportActionBar().setDisplayOptions(android.support.v7.app.ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#044747")));
+        getSupportActionBar().setCustomView(R.layout.custom_action_bar_layout);
+        TextView substation_nameTxt = (TextView) findViewById(R.id.substation_nameTxt);
+        TextView feeder_nametxtt = (TextView) findViewById(R.id.feeder_nametxtt);
+        substation_nameTxt.setText(":   "+substation_name);
+        feeder_nametxtt.setText(":   "+feeder_name);
+        remarkData();
+    }
+
+
+    public void remarkData(){
+        try{
+            AsyncTask<Void, Void, Void> task = new AsyncTask<Void, Void, Void>() {
+                @Override
+                protected void onPreExecute() {
+                    if (pd == null) {
+                        pd = new ProgressDialog(ViewRemarkActivity.this);
+                        pd.setMessage("Please wait.");
+                        pd.setCancelable(false);
+                        pd.setIndeterminate(true);
+                    }
+                    pd.show();
+                }
+
+                @Override
+                protected Void doInBackground(Void... arg0) {
+                    try {
+                        resultData = Util.getdata(API.VIEW_REMARK+"login_id="+LoginActivity.login_id+"&password="+LoginActivity.password+"&access_level="+LoginActivity.access_area+"&sensor_id="+feeder_id+"&profile_id="+LoginActivity.login_id);
+                        resultData = resultData.replaceAll("<[^>]*>", "");
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    return null;
+                }
+
+                @Override
+                protected void onPostExecute(Void result) {
+                    ///--------------------------------------------------------
+                    if (pd != null && pd.isShowing()) {
+                        if (pd.isShowing()) {
+                            pd.dismiss();
+                        }
+                        pd = null;
+                    }
+                    try {
+                        JSONObject reader = new JSONObject(resultData);
+                        int rc = reader.getInt("rc");
+
+                        //------------------------------Table----------------------------------------
+                        TableLayout tl = (TableLayout) findViewById(R.id.remarkLayout);
+
+                        tl.removeAllViews();
+                        if (rc == 0) {
+                            JSONArray main= reader.getJSONArray("data");
+                            try {
+                                //---------------------------Table Header-------------------------------------------
+                                TableRow tr_head = new TableRow(ViewRemarkActivity.this);
+                                tr_head.setBackgroundColor(Color.parseColor("#004f4f"));
+                                tr_head.setLayoutParams(new ViewGroup.LayoutParams(
+                                        ViewGroup.LayoutParams.FILL_PARENT,
+                                        ViewGroup.LayoutParams.WRAP_CONTENT));
+                                TextView label_no = new TextView(ViewRemarkActivity.this);
+                                label_no.setText("#" + System.getProperty("line.separator") + "");
+                                label_no.setPadding(8, 10, 50, 10);
+                                label_no.setTextColor(Color.parseColor("#87cefa"));
+                                label_no.setTextSize(16);
+                                tr_head.addView(label_no);
+
+                                TextView label_name = new TextView(ViewRemarkActivity.this);
+                                label_name.setText("Serial" + System.getProperty("line.separator") + "No");
+                                label_name.setPadding(50, 10, 0, 10);
+                                label_name.setTextColor(Color.parseColor("#87cefa"));
+                                label_name.setTextSize(16);
+                                tr_head.addView(label_name);
+
+                                TextView label_inter_count = new TextView(ViewRemarkActivity.this);
+                                label_inter_count.setText("Gateway "+  System.getProperty("line.separator") +"ID");
+                                label_inter_count.setTextColor(Color.parseColor("#87cefa"));
+                                label_inter_count.setPadding(50, 10, 0, 10);
+                                label_inter_count.setTextSize(16);
+                                tr_head.addView(label_inter_count);
+
+                                TextView label_inter_duration = new TextView(ViewRemarkActivity.this);
+                                label_inter_duration.setText("Project "+  System.getProperty("line.separator") +"ID");
+                                label_inter_duration.setTextColor(Color.parseColor("#87cefa"));
+                                label_inter_duration.setTextSize(16);
+                                label_inter_duration.setPadding(50, 10, 0, 10);
+                                tr_head.addView(label_inter_duration);
+
+                                TextView label_total = new TextView(ViewRemarkActivity.this);
+                                label_total.setText("Log"+  System.getProperty("line.separator") +"Type");
+                                label_total.setTextColor(Color.parseColor("#87cefa"));
+                                label_total.setTextSize(16);
+                                label_total.setPadding(50, 10, 0, 10);
+                                tr_head.addView(label_total);
+
+                                TextView label_total1 = new TextView(ViewRemarkActivity.this);
+                                label_total1.setText("Remark"+  System.getProperty("line.separator") +"");
+                                label_total1.setTextColor(Color.parseColor("#87cefa"));
+                                label_total1.setTextSize(16);
+                                label_total1.setPadding(50, 10, 0, 10);
+                                tr_head.addView(label_total1);
+
+                                TextView labelEUL1= new TextView(ViewRemarkActivity.this);
+                                labelEUL1.setText("Remark "+  System.getProperty("line.separator") +"Date");
+                                labelEUL1.setTextColor(Color.parseColor("#87cefa"));
+                                labelEUL1.setTextSize(16);
+                                labelEUL1.setPadding(50, 10, 0, 10);
+                                tr_head.addView(labelEUL1);
+
+                                TextView labelEULAMT1= new TextView(ViewRemarkActivity.this);
+                                labelEULAMT1.setText("Creation "+  System.getProperty("line.separator") +"Time");
+                                labelEULAMT1.setTextColor(Color.parseColor("#87cefa"));
+                                labelEULAMT1.setTextSize(16);
+                                labelEULAMT1.setPadding(50, 10, 0, 10);
+                                tr_head.addView(labelEULAMT1);
+
+                                TextView labelEUL2= new TextView(ViewRemarkActivity.this);
+                                labelEUL2.setText("Status "+  System.getProperty("line.separator") +"");
+                                labelEUL2.setTextColor(Color.parseColor("#87cefa"));
+                                labelEUL2.setTextSize(16);
+                                labelEUL2.setPadding(50, 10, 100, 10);
+                                tr_head.addView(labelEUL2);
+
+
+                                tl.addView(tr_head, new TableLayout.LayoutParams(
+                                        ViewGroup.LayoutParams.FILL_PARENT,
+                                        ViewGroup.LayoutParams.WRAP_CONTENT));
+
+                                View v1 = new View(ViewRemarkActivity.this);
+                                v1.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.FILL_PARENT, 2));
+                                v1.setBackgroundColor(Color.parseColor("#a8a8a8"));
+                                tl.addView(v1);
+
+
+                                for(int i=0; i<main.length(); i++) {
+                                    //---------------------------Table Data Row-------------------------------------------
+                                    TableRow tr = new TableRow(ViewRemarkActivity.this);
+
+                                    JSONObject objects = main.getJSONObject(i);
+                                    String project_id=objects.getString("project_id");
+                                    String data_logger_id=objects.getString("data_logger_id");
+                                    String log_type=objects.getString("log_type");
+                                    String remark=objects.getString("remark");
+                                    String remark_date=objects.getString("remark_date");
+                                    String creation_time=objects.getString("creation_time");
+                                    String status=objects.getString("status");
+                                    String MC_UID=objects.getString("MC_UID");
+                                    String device_sr_no=objects.getString("device_sr_no");
+
+
+                                    tr.setLayoutParams(new TableRow.LayoutParams(
+                                            ViewGroup.LayoutParams.FILL_PARENT,
+                                            ViewGroup.LayoutParams.WRAP_CONTENT));
+                                    tr.setBackgroundColor(tablerowcolor);
+
+                                    View v = new View(ViewRemarkActivity.this);
+                                    v.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.FILL_PARENT, 1));
+                                    v.setBackgroundColor(Color.parseColor("#a8a8a8"));
+
+                                    TextView labelNo = new TextView(ViewRemarkActivity.this);
+                                    labelNo.setText(i+1+"");
+                                    labelNo.setPadding(12, 12, 10, 12);
+                                    labelNo.setTextSize(12);
+                                    labelNo.setTextColor(white);
+                                    tr.addView(labelNo);
+
+                                    TextView labelName = new TextView(ViewRemarkActivity.this);
+                                    labelName.setText(device_sr_no);
+                                    labelName.setPadding(50, 12, 0, 12);
+                                    labelName.setTextSize(12);
+                                    labelName.setTextColor(white);
+                                    tr.addView(labelName);
+
+                                    TextView labelinterruptionCount = new TextView(ViewRemarkActivity.this);
+                                    labelinterruptionCount.setText(MC_UID);
+                                    labelinterruptionCount.setPadding(50, 12, 0, 12);
+                                    labelinterruptionCount.setTextSize(12);
+                                    labelinterruptionCount.setTextColor(white);
+                                    tr.addView(labelinterruptionCount);
+
+                                    TextView labellabelinterruptionDur = new TextView(ViewRemarkActivity.this);
+                                    labellabelinterruptionDur.setText(project_id);
+                                    labellabelinterruptionDur.setPadding(50, 12, 0, 12);
+                                    labellabelinterruptionDur.setTextSize(12);
+                                    labellabelinterruptionDur.setTextColor(white);
+                                    tr.addView(labellabelinterruptionDur);
+
+                                    TextView labeltotal_eul_unit = new TextView(ViewRemarkActivity.this);
+                                    labeltotal_eul_unit.setText(log_type);
+                                    labeltotal_eul_unit.setTextSize(12);
+                                    labeltotal_eul_unit.setPadding(50, 12, 0, 12);
+                                    labeltotal_eul_unit.setTextColor(white);
+                                    tr.addView(labeltotal_eul_unit);
+
+                                    TextView labeltotal_eul_rs = new TextView(ViewRemarkActivity.this);
+                                    labeltotal_eul_rs.setText(remark);
+                                    labeltotal_eul_rs.setTextSize(12);
+                                    labeltotal_eul_rs.setPadding(50, 12, 0, 12);
+                                    labeltotal_eul_rs.setTextColor(white);
+                                    tr.addView(labeltotal_eul_rs);
+
+                                    TextView labelEUL11 = new TextView(ViewRemarkActivity.this);
+                                    labelEUL11.setText(remark_date);
+                                    labelEUL11.setTextSize(12);
+                                    labelEUL11.setPadding(50, 12, 0, 12);
+                                    labelEUL11.setTextColor(white);
+                                    tr.addView(labelEUL11);
+
+                                    TextView labelEULAMT11 = new TextView(ViewRemarkActivity.this);
+                                    labelEULAMT11.setText(creation_time);
+                                    labelEULAMT11.setTextSize(12);
+                                    labelEULAMT11.setPadding(50, 12, 0, 12);
+                                    labelEULAMT11.setTextColor(white);
+                                    tr.addView(labelEULAMT11);
+
+                                    TextView labelEUL12 = new TextView(ViewRemarkActivity.this);
+                                    labelEUL12.setText(status);
+                                    labelEUL12.setTextSize(12);
+                                    labelEUL12.setPadding(50, 12, 0, 12);
+                                    labelEUL12.setTextColor(white);
+                                    tr.addView(labelEUL12);
+
+                                    tl.addView(tr, new TableLayout.LayoutParams(
+                                            ViewGroup.LayoutParams.FILL_PARENT,
+                                            ViewGroup.LayoutParams.WRAP_CONTENT));
+                                    tl.addView(v);
+                                }
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+                }
+            };
+            task.execute((Void[])null);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}

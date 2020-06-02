@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="@drawable/background">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2"
+        android:shrinkColumns="2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/lasttxt"
+                android:layout_width="800dp"
+                android:layout_height="0dp"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="3dp">
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/line1"
+                android:layout_width="0dp"
+                android:gravity="left|center"
+                android:layout_height="35dp"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/lightblue"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:id="@+id/line23"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_weight="1"
+                android:background="#FF909090"
+                android:padding="2dip" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="3dp">
+
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/feeder1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="Start Time"
+                android:paddingLeft="2dp"
+                android:textColor="@color/white"
+                android:gravity="left|center"
+                android:textSize="@dimen/textsize" />
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/line2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:paddingLeft="2dp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textsize"
+                android:gravity="left|center"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:id="@+id/line13"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_weight="1"
+                android:background="#FF909090"
+                android:padding="2dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="25dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="3dp" >
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/feeder2"
+                android:layout_width="0dp"
+                android:gravity="left|center"
+                android:layout_height="35dp"
+                android:text="Stop Time"
+                android:paddingLeft="2dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize" />
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/line3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:paddingLeft="2dp"
+                android:gravity="left|center"
+                android:textSize="@dimen/textsize"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:id="@+id/line74"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_weight="1"
+                android:background="#FF909090"
+                android:padding="2dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="3dp" >
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/feeder3"
+                android:layout_width="0dp"
+                android:paddingLeft="2dp"
+                android:gravity="left|center"
+                android:layout_height="35dp"
+                android:text="Power Outage Reason"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize"/>
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/line4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:paddingLeft="2dp"
+                android:gravity="left|center"
+                android:textSize="@dimen/textsize"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

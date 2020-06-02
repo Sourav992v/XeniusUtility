@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.1_e5ebda6e200ec4ca04bf43c6b33aac502a3a0aff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.1_42e755df11a80925fd32648a0c35cf21a94b7e95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.3.1_31434157807c51260fa2099a4eeaef63541effb4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pratima Singh\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_c57742707fcc7a70b8277f18844eb2449510a5e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.1_1188b336aae80d206ae455c15eef27433b266532.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.1_cac0a8f3b050bb0a39da0aac2fbdb4ee36eb1749.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pratima Singh\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\butterknife-6.1.0_e1fac82887e4eea4dc42c71bd0927487457c84c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.3.1_cd2606dbfdd10540e106ca0485ff8bf65a764a86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.3.1_3fe36d83399505cecb3b8df83f3fded69698a6d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.1_160bc8f4d0b4678bc10dd9384d69d7fb08cc52cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.3.1_5a5aa49cf69a64b996dfa86e061d2a0dea793ec1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\de.codecrafters.tableview\tableview\2.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4df1c091e0ed1cf3e7aec724565f190e052a54c6">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\de.codecrafters.tableview-tableview-2.2.0_069f31ea1bdf5af1334e6c8f7b948894a8e29595.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.3.1_4b1224aa669502175378ae2aa01e3ac2e69f7e07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.1_10ed1184705161ce11ac4cc85b7c3edff422bca1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="D:\workspace_new_android\repos_mobione\AndroidStudio\XeniusSEMSFeeder\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.3.1_fe99cf249f2674947e54fb96d6943b3af5b50b90.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\menu\\reset_password_forgot.xml",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\src\\main\\res\\menu\\reset_password_forgot.xml"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\menu\\je_sdo_tab_option.xml",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\src\\main\\res\\menu\\je_sdo_tab_option.xml"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\menu\\launch.xml",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\src\\main\\res\\menu\\launch.xml"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\menu\\forgot_password.xml",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\src\\main\\res\\menu\\forgot_password.xml"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\menu\\bottom_navigation_items.xml",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\src\\main\\res\\menu\\bottom_navigation_items.xml"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\menu\\ot.xml",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\src\\main\\res\\menu\\ot.xml"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\src\\main\\res\\menu\\menu_main.xml"
+    }
+]

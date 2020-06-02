@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_dark_sortable.png",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\exploded-aar\\de.codecrafters.tableview\\tableview\\2.2.0\\res\\mipmap-xxhdpi-v4\\ic_dark_sortable.png"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_light_sorted_desc.png",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\exploded-aar\\de.codecrafters.tableview\\tableview\\2.2.0\\res\\mipmap-xxhdpi-v4\\ic_light_sorted_desc.png"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_dark_sorted_asc.png",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\exploded-aar\\de.codecrafters.tableview\\tableview\\2.2.0\\res\\mipmap-xxhdpi-v4\\ic_dark_sorted_asc.png"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_light_sorted_asc.png",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\exploded-aar\\de.codecrafters.tableview\\tableview\\2.2.0\\res\\mipmap-xxhdpi-v4\\ic_light_sorted_asc.png"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_dark_sorted_desc.png",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\exploded-aar\\de.codecrafters.tableview\\tableview\\2.2.0\\res\\mipmap-xxhdpi-v4\\ic_dark_sorted_desc.png"
+    },
+    {
+        "merged": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_light_sortable.png",
+        "source": "D:\\workspace_new_android\\repos_mobione\\AndroidStudio\\XeniusSEMSFeeder\\app\\build\\intermediates\\exploded-aar\\de.codecrafters.tableview\\tableview\\2.2.0\\res\\mipmap-xxhdpi-v4\\ic_light_sortable.png"
+    }
+]

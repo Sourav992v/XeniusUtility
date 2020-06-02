@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+		<script type="text/javascript">
+$(function () {
+	$('#container').highcharts({
+        chart: {
+            type: 'column',
+            spacingLeft: 2,
+            marginRight: 70,
+            marginTop: 20,
+            backgroundColor:'transparent'
+        },
+         credits: {
+      			enabled: false
+ 			 },
+        
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: [%DATE%]
+        },
+        exporting: {
+            enabled: false
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'DATE'
+            }
+        },
+        legend: {
+            align: 'center',
+            x: -40,
+            verticalAlign: 'bottom',
+            y: 0
+        },
+        plotOptions: {
+            column: {
+                dataLabels: {
+                rotation: -90,
+            	 enabled: true,
+                 crop: false,
+                 overflow: 'none'
+            }
+            },
+
+            series: {
+            borderWidth: 0
+
+        }
+        },
+        series: [{
+            name: 'Last Year Month Consumption( %READINGUNIT% ) ',
+            data: [%PREVIOUS_GRID%, %PREVIOUS_DG%],
+            color: '#7798bf',
+            stack: 'female'
+        }, {
+            name: 'Current Year Month Consumption( %READINGUNIT% ) ',
+            data: [%CURRENT_GRID%, %CURRENT_DG%],
+            color: '#f45b5b',
+            stack: 'male'
+        }]
+    });
+});
+		</script>
+	</head>
+	<body>
+<script src="%PATH%"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/highcharts-3d.js"></script>
+
+<div id="container" style="height: 350px; width: 400px;"></div>
+
+	</body>
+</html>

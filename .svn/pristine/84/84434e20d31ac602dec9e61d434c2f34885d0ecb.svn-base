@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Xenius Utility</string>
+    <string name="item_1">Overview</string>
+    <string name="item_2">Feeder Details</string>
+    <string name="item_3">Avg Outage</string>
+    <string name="item_4">Outage</string>
+    <string name="item_5">Outage Reason</string>
+    <string name="title_activity_je__sdo__main">JE_SDO_MainActivity</string>
+    <string name="outage">Outage Details</string>
+    <string name="avg_outage">Avg Outage</string>
+    <string name="app_header_tital">UPPCL Feeder Monitoring System</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

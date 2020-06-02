@@ -1,0 +1,24 @@
+package radius.xenius.sems.feeder;
+
+/**
+ * Created by Pratima Singh on 16-02-2017.
+ */
+
+public class Card {
+        private String month_year;
+        private String line1;;
+
+        public Card(String month_year) {
+            this.month_year = month_year;
+        }
+
+        public String getMonth_year() {
+            return month_year;
+        }
+        public void setLine1(String line1) {
+            this.line1 = line1;
+        }
+        public String getLine1() {
+            return month_year;
+        }
+}

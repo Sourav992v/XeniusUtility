@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/editLinearLayout"
+    android:background="#005a5a"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_marginTop="5dp"
+       android:padding="10dp"
+        android:background="@drawable/background"
+        android:layout_below="@+id/RelativeLayout03">
+
+        <RelativeLayout
+            android:id="@+id/relative_spnr_substation"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/background"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/discomText"
+            android:layout_toEndOf="@+id/discomText">
+
+            <Spinner
+                android:id="@+id/spnr_substation"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dialog"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/discomText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Substation : "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/card_listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relative_spnr_substation"
+            android:divider="@null"
+            android:nestedScrollingEnabled="true"
+            android:dividerHeight="5dp"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

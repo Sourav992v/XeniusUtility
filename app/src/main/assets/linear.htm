@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+		<script type="text/javascript">
+$(function () {
+	$('#container').highcharts({
+        chart:{
+	    	type:'bar',
+	        margin:[15,15,35,15],
+	        plotBorderWidth: 1,
+	        plotBorderColor: '#999',
+	        backgroundColor: '#F2F2F2',
+	        height: 60
+        },
+        credits:{enabled:false},
+        exporting:{enabled:false},
+        legend:{enabled:false},
+        title:{text:''},
+        xAxis:{
+            tickLength:0,
+            lineColor:'#999',
+            lineWidth:0,
+            labels:{style:{fontWeight:'bold'}}       
+        },
+        yAxis:{
+            min:0,
+            max:%MAX_VALUE%,
+            labels:{y:20,style:{fontSize:'11px'}},    
+            plotBands:[{from:%FROM_1%,to:%TO_1%,color: '#55BF3B'},
+                       {from:%FROM_2%,to:%TO_2%,color: '#DDDF0D'},
+                       {from:%FROM_3%,to:%TO_3%,color: 'rgba(255,0,0,.75)'}],
+            tickColor:'#888',
+            tickWidth:2,
+            tickLength:6,
+            tickInterval:%TICK_INTERVAL%,
+            minorTickInterval:5,
+            minorTickWidth:2,
+            minorTickLength:4,
+            minorGridLineWidth:0,
+            tickPosition: 'outside',
+            gridLineWidth:0,
+            endOnTick:true,
+            title:{text: ''}
+        },
+        tooltip:{
+            enabled:false,
+            backgroundColor:'rgba(255, 255, 255, .85)',
+            borderWidth:0,
+            shadow:true,
+            style:{fontSize:'15px',padding:2},  
+            formatter:function() {
+            return this.series.name + ": <strong>" + Highcharts.numberFormat(this.y,2) + "</strong>";
+            }
+        },
+        plotOptions:{
+        	series: {
+	        	dataLabels: {
+		            x: 50,
+		            y: -25,
+		            style: {
+		                fontSize:'12px',
+		                fontWeight:'bold'
+		            },
+		            format: '{y} %READINGUNIT%',
+		            enabled: true
+	            },
+	            animation: false
+			},
+            bar:{
+                },
+            scatter:{
+                marker:{                
+                    symbol:'url(http://www.veryicon.com/icon/32/System/Crystal%20Clear%20Actions/Left%20Arrow.png)'
+                }
+            }
+        },
+        series:[{
+            type: 'scatter',
+            data:[[0,0]]}]
+    });
+    var chart1 = $('#container').highcharts();
+    chart1.series[0].points[0].update({x:0,y:%TODAY_DG%}, true, {duration: 1000}); 
+});
+
+	</script>
+
+	</head>
+	<body>
+<script src="%PATH%"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="height: auto; background-color:'#F2F2F2';"></div>
+	</body>
+</html>

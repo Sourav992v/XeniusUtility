@@ -1,0 +1,1 @@
+http://13.127.171.52:8443/svn/svn_1_1/repos_mobione/AndroidStudio/XeniusSEMSFeeder

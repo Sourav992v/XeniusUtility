@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="45dp"
+    android:layout_height="45dp">
+
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logoutt"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:title="Logout"
+        yourapp:showAsAction="always" />
+</menu>

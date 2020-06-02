@@ -1,0 +1,42 @@
+package radius.xenius.sems.feeder;
+
+/**
+ * Created by Pratima Singh on 14-05-2018.
+ */
+//for API contact to Surbhi
+public class API {
+    public static String POST="POST";
+    public static String GET="GET";
+    public static String LOGINURL="https://myxenius.com";//for forgotPassword
+    public static String baseURL="https://feeder.myxenius.com/feeder_api/api/";
+   // public static String baseURL="https://vapt-feeder.myxenius.com/feeder_api/api/";
+    public static String baseURL2="https://feeder.myxenius.com/thirdparty/api/";
+    public static String baseURLJavaAPI="http://feeder.myxenius.com:8080/feeder/";
+    public static String LOGIN=baseURL+"login?";
+    public static String ACCESS_LEVEL=baseURL+"access_level?";
+    public static String FEEDER_STATUS=baseURL+"feeder_status?";
+   // public static String FEEDER_STATUS="http://192.168.2.133/feeder_api/api/feeder_status?login_id=feeder&password=seit.uppcl&access_level=UPPCL";
+    public static String VITAL_STATISTICS=baseURL+"vital_statistics?";
+    public static String DISCOMS=baseURL+"discoms";
+    public static String ZONES=baseURL+"zones?";
+    public static String CIRCLE=baseURL+"circles?";
+    public static String DIVISION=baseURL+"divisions?";
+    public static String SUBSTAION=baseURL+"substations?";
+    public static String FEEDER=baseURL+"feeders?";
+    public static String FEEDER_DETAILS=baseURL+"feeder_details?";
+    public static String AVG_OUTAGE_DETAILS=baseURL+"avg_outage_details?";
+    public static String AVG_OUTAGE_TYPE_LIST=baseURL+"outage_type_list?";
+    public static String FEEDER_DATA=baseURL+"feeder_data?";
+    public static String ADD_REMARK=baseURL+"add_remark?";
+   // public static String ADD_REMARK="http://192.168.40.104/feeder_api/api/add_remark?login_id=feeder&password=feeder&access_level=uppcl&sensor_id=59b261abbf5ec5.55155027&";
+    public static String VIEW_REMARK=baseURL+"view_remark?";
+    public  static String POWER_OUTAGE_DETAILS=baseURLJavaAPI+"poweroutagedetails?";
+    public  static String OUTAGE_OPTIONS=baseURLJavaAPI+"outageoptions";
+    public  static String UPDATE_POWER_OUTAGE_REASON=baseURLJavaAPI+"updatepoweroutagereason?";
+
+    //-------------forgotPassword--------------------------------------------------------
+    public static String OTP_VARIFY="https://myxenius.com/thirdparty/api/otp_varify?";
+    public static String FORGOT_PASSWORD=baseURL2+"forget_password?";
+    public static String PASSWORD_CHANGE="https://myxenius.com/thirdparty/api/password_change?";
+    public static String RESEND_OTP="https://myxenius.com/thirdparty/api/resend_otp?";
+}

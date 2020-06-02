@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Highcharts Example</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+$(function () {
+	$('#container').highcharts({
+	                chart: {
+                        type: 'spline',
+                        backgroundColor: "#005c5c",
+                        height: 250
+                    },
+                    title: {
+                        text: '',
+                        x: 0
+                    },
+                    exporting: {
+                    	enabled: false
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    xAxis: {
+                         categories: %DATE%,
+                         labels: {
+						 style: {
+							color: '#ffffff'
+						 }
+					    },
+                        title: {
+                            text: 'DAY',
+                             style: {
+                                 fontSize: '12px',
+                                 color: '#cce3e3'
+						     }
+                        }
+                    },
+                    yAxis: {
+                      lineColor: '#ffffff',
+      				  tickColor: '#ffffff',
+                      labels: {
+						 style: {
+							color: '#ffffff'
+						 }
+					  },
+                      title: {
+                        text: 'UNITS',
+                         style: {
+                       		fontSize: '12px',
+							color: '#cce3e3'
+						 }
+                      },
+                      min:0
+                    },
+                    tooltip: {
+                    	backgroundColor: '#FFFFFF',
+						borderColor: '#036cad',
+						borderRadius: 10,
+						borderWidth: 2,
+						style: {
+							color: '#025487',
+							fontSize: '12px',
+							fontWeight: 'bold',
+						 },
+
+						formatter: function() {
+								return 'DAY: <b>' + this.x + '</b> , %UOM%: <b>' + this.y + '</b>';
+						},
+						pointFormat: '{point.y:.2f}'
+					},
+                    legend: {
+                    	itemStyle:{
+                    	  'font-size':'12px',
+                    	  color: '#ffffff'
+                    	},
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'middle',
+                        borderWidth: 0,
+                         x: 0,
+            			 y: 2,
+            			floating: true
+                    },
+                    series: [{
+                    		name: '%UOM%',
+                            data: %KVAH%,
+                            color: '#87cefa'
+                        }]
+   		 });
+		});
+
+
+</script>
+	</head>
+	<body>
+<script src="%PATH%"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/highcharts-3d.js"></script>
+
+<div id="container" style="height: 700px;"></div>
+
+</body>
+</html>
