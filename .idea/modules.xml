@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/XeniusSEMSFeeder.iml" filepath="$PROJECT_DIR$/XeniusSEMSFeeder.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XeniusSEMSFeeder.iml" filepath="$PROJECT_DIR$/XeniusSEMSFeeder.iml" group="XeniusSEMSFeeder" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="XeniusSEMSFeeder/app" />
     </modules>
   </component>
 </project>

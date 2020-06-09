@@ -183,7 +183,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="TODAY'S VITAL STATISTICS"
+                android:text="SUPPLY_STATUS"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textSize="12dp"
                 android:textStyle="bold"
@@ -282,12 +282,20 @@
                 android:id="@+id/horizontalView"
                 android:layout_height="wrap_content"
                 android:scrollbars="horizontal|vertical"
-                android:layout_width="420dp">
+                android:layout_width="match_parent">
 
-            <TableLayout
+            <!--<TableLayout
                 android:layout_marginTop="0dp"
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/today"
+                android:layout_weight="6"
+                android:stretchColumns="*"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">-->
+                <TableLayout
+                android:layout_marginTop="0dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/supply_status"
                 android:layout_weight="6"
                 android:stretchColumns="*"
                 android:layout_height="wrap_content"

@@ -34,6 +34,8 @@ public class API {
     public  static String OUTAGE_OPTIONS=baseURLJavaAPI+"outageoptions";
     public  static String UPDATE_POWER_OUTAGE_REASON=baseURLJavaAPI+"updatepoweroutagereason?";
 
+    public static String SUPPLY_STATUS = baseURL+"supply_status?";
+
     //-------------forgotPassword--------------------------------------------------------
     public static String OTP_VARIFY="https://myxenius.com/thirdparty/api/otp_varify?";
     public static String FORGOT_PASSWORD=baseURL2+"forget_password?";

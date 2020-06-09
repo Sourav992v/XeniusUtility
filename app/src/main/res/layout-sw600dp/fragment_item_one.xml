@@ -187,7 +187,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="TODAY'S VITAL STATISTICS"
+                        android:text="SUPPLY STATUS"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@color/yello"
                         android:textSize="16sp"
@@ -289,7 +289,7 @@
                             android:scrollbars="horizontal|vertical">
 
                             <TableLayout
-                                android:id="@+id/today"
+                                android:id="@+id/supply_status"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
